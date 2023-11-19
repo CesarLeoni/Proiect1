@@ -1,4 +1,4 @@
-name: C/C++ CI
+qname: C/C++ CI
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: configure
-      run: ./configure
+      run: freq_calc.cpp
     - name: make
       run: make
     - name: make check
